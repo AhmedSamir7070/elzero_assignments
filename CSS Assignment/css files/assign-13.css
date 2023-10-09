@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    font: 25px Arial,sans-serif;
+}
+
+:root {
+    --mainPadding: 20px;
+    --mainMargin: 15px;
+    --mainBackground: #eee;
+}
+
+.assign-1 {
+    width: 600px;
+    background-color: #eee;
+    text-align: center;
+    margin: 40px auto;
+    padding: 35px 50px;
+    letter-spacing: 4px;
+    border-left: 10px solid #F44336;
+    border-right: 10px solid #9C27B0;
+    position: relative;
+}
+
+.assign-1::first-letter {
+    content: "";
+    color: #F44336;
+}
+
+.assign-1::before {
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient( to right
+                                    ,#F44336 20%
+                                    ,#2196f3 20%
+                                    ,#2196f3 40%
+                                    ,#4caf50 40%
+                                    ,#4caf50 60%
+                                    ,#e91e63 60%
+                                    ,#e91e63 80%
+                                    ,#9C27B0 80% );
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.assign-1::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient( to right
+                                    ,#F44336 20%
+                                    ,#2196f3 20%
+                                    ,#2196f3 40%
+                                    ,#4caf50 40%
+                                    ,#4caf50 60%
+                                    ,#e91e63 60%
+                                    ,#e91e63 80%
+                                    ,#9C27B0 80% );
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.parent {
+    text-transform: capitalize;
+    width: 600px;
+    margin: auto;
+}
+
+.parent div {
+    background-color: var(--mainBackground);
+    padding: var(--mainPadding);
+    margin: var(--mainMargin);
+    width: 600px;
+    caret-color: red;
+    border: none;
+    border-bottom: 3px solid;
+    border-image-source: linear-gradient(to right,#F44336 50%,#009789 50%);
+    border-image-slice: 1;
+}
+
+.parent div:focus {
+    outline: none;
+}
+
+.parent .two,
+.parent .three {
+    color: #0000004d;
+}
+
+/* .parent div::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient( to right
+                                    ,#F44336 50%
+                                    ,#009789 50%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+} */

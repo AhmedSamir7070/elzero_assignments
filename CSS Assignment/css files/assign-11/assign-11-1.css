@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+div.parent {
+    width: 500px;
+    /* height: 500px; */
+    background-color: rgb(239,239,239);
+    font-size: 1.2em;
+    margin: 70px auto;
+    padding: 2em 2em 3.5em 2em;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+div.child {
+    background-color: rgb(221,221,221);
+    padding: 1.5em;
+    transition: all 0.5s ease-in-out 0.2s;
+    -webkit-transition: all 0.5s ease-in-out 0.2s;
+    -moz-transition: all 0.5s ease-in-out 0.2s;
+    -ms-transition: all 0.5s ease-in-out 0.2s;
+    -o-transition: all 0.5s ease-in-out 0.2s;
+}
+
+div.parent:hover {
+    margin-top: -10px;
+}
+
+div.parent:hover .child{
+    margin-top: 1.5em;
+}
+
+hr {
+    margin: 30px 0;
+}

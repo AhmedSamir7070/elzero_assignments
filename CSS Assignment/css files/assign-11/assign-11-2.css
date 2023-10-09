@@ -1,0 +1,26 @@
+/* div {
+    visibility: hidden;
+} */
+
+div::first-line {
+    content: "";
+    visibility: hidden;
+} 
+
+div::after {
+    content: "Elzero";
+    position: absolute;
+    right: 9em;
+}
+
+div {
+    content: "Elzero" !important;
+    background-color: #eee !important;
+    color: black !important;
+    border: none !important;
+    font: 20px bold Arial,sans-serif !important;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}

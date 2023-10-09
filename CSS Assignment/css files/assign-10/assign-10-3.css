@@ -1,0 +1,82 @@
+div.parent {
+    width: 550px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin: 20px auto;
+    padding: 10px;
+    overflow: hidden;
+    border: 2px solid #eee;
+    position: relative;
+}
+
+div.child-1,
+div.child-2 {
+    background-color: rgb(239,239,239);
+    width: 230px;
+    height: 300px;
+    float: left;
+    /* text-align: center; */
+    padding: 0px 10px;
+    position: relative;
+}
+ 
+div.child-2 {
+    margin-left: 50px;
+}
+
+p.top {
+    background-color: #2196F3;
+    color: white;
+    /* width: calc(( 100% - 50px ) / 1); */
+    /* margin-left: 22px; */
+    padding: 4px;
+    /* font-size: 1.5em; */
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+}
+
+p.price {
+    background-color: rgb(221,221,221);
+    /* width: calc(( 100% - 50px ) / 1); */
+    width: 200px;
+    height: 200px;
+    /* margin-left: 22px;
+    padding-top: 30%;
+    margin-top: -2px; */
+    font-size: 2.5em;
+    border-radius: 100px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.price::after {
+    content: attr(text);
+    position: absolute;
+    top: 36%;
+    right: 64px;
+}
+
+
+:empty {
+    content: "";
+    background-color: #2196F3;
+    position: absolute;
+    left: 50%;
+    top: 4%;
+    width: 3px;
+    height: 300px;
+}
+
+.child-2::before {
+    content: "or";
+    background-color: #2196F3;
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 50%;
+    position: absolute;
+    left: -39px;
+    top: 44%;
+}

@@ -1,0 +1,228 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.one-1 {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    color: #FF5722;
+    margin: auto;
+    font: 2em Arial,sans-serif;
+    font-weight: bold;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 10px 0 0 #FF5722, -10px 0px 0 #2196F3;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.parent-1 {
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    background: #eee;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.parent-1 div {
+    padding: 10px;
+    width: calc( 80% / 3);
+    display: flex;
+    background: #FF5722;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+}
+
+.parent-2 {
+    height: 300px;
+    width: 600px;
+    padding: 10px;
+    background-color: #eee;
+    color: white;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.parent-2 div {
+    background-color: #607D8B;
+    color: white;
+    display: flex;
+    width: calc(90%/3);
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-2 .one-2 {
+    order: 6;
+    height: 40px;
+    align-self: flex-end;
+}
+
+.parent-2 .two-2 {
+    order: 5;
+    /* padding: 3em; */
+}
+
+.parent-2 .three-2 {
+    order: 3;
+    height: 40px;
+}
+
+.parent-2 .four {
+    order: 3;
+}
+
+.parent-2 .five {
+    order: 4;
+}
+
+.parent-3 {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.parent-3 .one-3,
+.parent-3 .two-3,
+.parent-3 .three-3 {
+    background-color: #2196F3;
+    color: white;
+    width: 5%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-3 .two-3 {
+    width: 50%;
+}
+
+.parent-3 .one-3,
+.parent-3 .three-3 {
+    align-self: flex-end;
+}
+
+.parent-4 {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent-4 .one-4,
+.parent-4 .two-4,
+.parent-4 .three-4,
+.parent-4 .four-4 {
+    background: burlywood;
+    color: white;
+    width: 15%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-4 .four-4 {
+    order: -1;
+    align-self: flex-end;
+}
+
+.parent-4 .two-4 {
+    align-self: flex-end;
+}
+
+:root {
+    --backgroundColor: #ccc;
+    --mainPadding: 15px;
+    --mainMargin: 15px;
+}
+
+.page {
+    background: #eee;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo,
+.links {
+    background-color: var(--backgroundColor);
+    padding: var(--mainPadding);
+    margin: var(--mainMargin);
+}
+
+ul.links {
+    list-style: none;
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: wrap;
+}
+
+.logo {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-right: var(--mainMargin);
+}
+
+.main-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content,
+.sidebar {
+    background-color: var(--backgroundColor);
+    height: 400px;
+    padding: var(--mainPadding);
+    margin: 0 var(--mainMargin) var(--mainMargin) var(--mainMargin);
+}
+
+.content {
+    width: 65%;
+}
+
+.sidebar {
+    width: 30%;
+}
+
+.footer {
+    background-color: var(--backgroundColor);
+    padding: var(--mainPadding);
+    margin: 0 var(--mainMargin) var(--mainMargin) var(--mainMargin);
+    display: flex;
+    justify-content: space-between;
+}

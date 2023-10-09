@@ -1,0 +1,12 @@
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+  }
+  
+p {
+    font: 20px Arial,sans-serif;
+    color: var(--mainColor, red);
+    padding: var(--mainPadding);
+    border: 3px solid var(--mainColor, black);
+    margin: 20px auto;
+  }
